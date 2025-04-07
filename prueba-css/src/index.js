@@ -2,25 +2,37 @@
 var arrayTest = [1, 2, 3, 3, 2, 1, 4];
 
 document.getElementById("app").innerHTML = `
-  <h1>Unique Element Challenge</h1>
 
-  <h2>Target</h2>
-  <div>Find the unique value in the array that is not duplicated. Use the <b>dubbed</b> function to return the unique element.</div>
-
-  <h2>Considerations</h2>
-  <ul>
-    <li>Values are duplicated only twice.</li>
-    <li>There is only one non duplicate value.</li>
-    <li>The non duplicate value can be placed anywhere on the array.</li>
-    <li>The result must be an integer.</li>
-  </ul>
+  <header class="layout__header">
+    <img src="./src/assets/logo.svg" alt="Logo Ancert" class="layout__logo" />
+    <h1 class="layout__title">Unique Element Challenge</h1>
+  </header>
   
-  <h2>Test Data</h2>
-  <div>${arrayTest}</div>
-    
-  <h2>Expected result</h2>
-  <div>4</div>
 
-  <h2>Your Result</h2>
-  <div>4</div>
+  <main class="layout__main">
+
+    <section class="info"> 
+      <h2 class="info__title">Target</h2>
+      <p class="info__description">Find the unique value in the array that is not duplicated. Use the <b>dubbed</b> function to return the unique element.</p>
+
+      <h2 class="info__title">Considerations</h2>
+      <ul class="info__list">
+        <li class="info__item">Values are duplicated only twice.</li>
+        <li class="info__item">There is only one non duplicate value.</li>
+        <li class="info__item">The non duplicate value can be placed anywhere on the array.</li>
+        <li class="info__item">The result must be an integer.</li>
+      </ul>
+    </section>
+
+    <section class="results"> 
+      <h2 class="results__title">Test Data</h2>
+      <div class="results__value">${arrayTest}</div>
+        
+      <h2 class="results__title">Expected result</h2>
+      <div class="results__value">4</div>
+
+      <h2 class="results__title">Your Result</h2>
+      <div class="results__value">4</div>
+    </section>
+  </main>
 `;
